@@ -101,6 +101,15 @@ module.exports = function(
     eject: 'react-scripts eject',
   };
 
+  // Define the extra dependencies
+  const extraDependencies = {
+    "prop-types": "^15.5.10",
+    "semantic-ui-react": "^0.83.0"
+  };
+
+  // Add the extra dependencies
+  Object.assign(appPackage.dependencies, extraDependencies);
+
   // Setup the eslint config
   appPackage.eslintConfig = {
     extends: 'react-app',
